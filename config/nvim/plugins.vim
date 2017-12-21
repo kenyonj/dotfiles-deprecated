@@ -15,6 +15,9 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" Set Gists to secret by default
+let g:gist_post_private = 1
+
 " vinegar hide dotfiles
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro nonumber'
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'

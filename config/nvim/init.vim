@@ -14,15 +14,16 @@ Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-rails'
 
 " Workflow
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mileszs/ack.vim'
-Plug 'BlakeWilliams/vim-tbro'
 Plug 'BlakeWilliams/vim-pry'
-Plug 'janko-m/vim-test'
-Plug 'w0rp/ale'
+Plug 'BlakeWilliams/vim-tbro'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
+Plug 'janko-m/vim-test'
+Plug 'mattn/gist-vim'
+Plug 'mileszs/ack.vim'
+Plug 'w0rp/ale'
 
 " Languages and markup
 Plug 'vim-ruby/vim-ruby'

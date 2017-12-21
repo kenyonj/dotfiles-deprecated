@@ -86,3 +86,16 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+function! ToggleNumber()
+  if &relativenumber
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
+endfunction
+map <Leader>r :call ToggleNumber()<cr>
+
+" Hide highlighted terms
+map <silent> <leader><cr> :noh<cr>

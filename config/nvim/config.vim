@@ -50,6 +50,9 @@ set expandtab                   " Make spaces not tabs
 " set tabstop=2                   " 2 space tabs
 set shiftwidth=2                " 2 spaces when indented
 
+" Vim and OS share clipboard
+set clipboard=unnamed
+
 filetype indent on              " Filetype specific indent
 filetype plugin on              " Filetype specific plugins
 
