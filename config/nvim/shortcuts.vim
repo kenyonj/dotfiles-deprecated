@@ -99,3 +99,6 @@ map <Leader>r :call ToggleNumber()<cr>
 
 " Hide highlighted terms
 map <silent> <leader><cr> :noh<cr>
+
+" use jsx file syntax highlighting
+map <Leader>jsx :let g:jsx_ext_required=0<CR>
