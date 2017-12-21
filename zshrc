@@ -88,6 +88,8 @@ CHRUBY_LOCATION="/usr/local/opt/chruby/share/"
 source "$CHRUBY_LOCATION/chruby/chruby.sh"
 source "$CHRUBY_LOCATION/chruby/auto.sh"
 chruby "ruby-2.4.2"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_HOME=$HOME/Library/Android/sdk
