@@ -1,6 +1,8 @@
 alias ae="nvim ~/.zsh/aliases.zsh"
 alias ar="source ~/.zsh/aliases.zsh; echo 'aliases reloaded!'"
 
+alias ..="cd .."
+
 alias zr="source ~/.zshrc; echo 'zshrc reloaded!'"
 
 alias b="bundle"
