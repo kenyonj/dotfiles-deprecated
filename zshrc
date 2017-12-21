@@ -88,6 +88,7 @@ source "$CHRUBY_LOCATION/chruby/auto.sh"
 chruby "ruby-2.4.2"
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.fastlane/bin:$PATH"
