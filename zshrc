@@ -7,6 +7,7 @@ compinit
 
 # Load completion functions
 fpath=(/usr/local/share/zsh/site-functions $fpath)
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Case insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -42,6 +43,7 @@ setopt correct                # Correct typos
 setopt hist_ignore_dups       # Don't show dupes in history
 setopt hist_ignore_space      # Ignore commands starting with space
 setopt prompt_subst           # Necessary for pretty prompts
+
 
 # Load all files in ~/.zsh
 for function in ~/.zsh/*; do

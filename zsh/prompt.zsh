@@ -1,7 +1,7 @@
 setopt promptsubst
 
 _git_branch(){
-  __ref=$(\git symbolic-ref HEAD 2> /dev/null) || __ref="detached" || return;
+  __ref=$(\git rev-parse --abbrev-ref HEAD 2> /dev/null) || __ref="detached" || return;
   echo -n "${__ref#refs/heads/}";
   unset __ref;
 }
