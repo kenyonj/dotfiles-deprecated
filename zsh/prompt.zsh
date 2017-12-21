@@ -71,6 +71,8 @@ fi;
 
 _separate()               { if [ -n "$1" ]; then echo " $1"; fi }
 _working_directory()      { echo "%B%F{blue}%c%b%f" }
+_red()                    { echo "%{$fg[red]%}" }
+_yellow()                 { echo "%{$fg[yellow]%}" }
 
 _display_current_vim_mode() {
   if [[ $VIMODE == 'vicmd' ]]; then
@@ -88,5 +90,5 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-PROMPT='$(_working_directory)$(_separate $(_git_clean_or_dirty)) '
+PROMPT='$(_working_directory)$(_separate $(_git_clean_or_dirty)) %(?.$(_yellow).$(_red))λ%{$reset_color%} '
 RPROMPT='$(_display_current_vim_mode)'
