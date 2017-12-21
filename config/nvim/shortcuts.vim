@@ -59,6 +59,9 @@ nmap <silent> <leader>rv :TestVisit<CR>
 " Make Y act like other capitals
 map Y y$
 
+" escape insert mode quickly
+imap jj <Esc>
+
 " Unmap useless keys
 noremap Q <Nop>
 noremap K <Nop>

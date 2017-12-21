@@ -1,8 +1,9 @@
 [user]
-  name = Blake Williams
-  email = blake@blakewilliams.me
+  name = Justin Kenyon
+  email = kenyonj@gmail.com
+  signingkey = 2538E93E
 [github]
-  user = BlakeWilliams
+  user = kenyonj
 [init]
   templatedir = ~/.git_template
 [color]
@@ -17,7 +18,7 @@
   statusHints = false
 [commit]
   template = ~/.gitmessage
-  ; gpgsign = true
+  gpgsign = true
 [fetch]
   prune = true
 [push]

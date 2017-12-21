@@ -72,3 +72,17 @@ bindkey '^?' backward-delete-char
 bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
 bindkey "^k" kill-line
+
+# jj to enter vim-mode
+bindkey jj vi-cmd-mode
+
+eval "$(fasd --init auto)"
+CHRUBY_LOCATION="/usr/local/opt/chruby/share/"
+source "$CHRUBY_LOCATION/chruby/chruby.sh"
+source "$CHRUBY_LOCATION/chruby/auto.sh"
+chruby "ruby-2.4.2"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="$HOME/.fastlane/bin:$PATH"

@@ -60,6 +60,9 @@ map Y y$
 noremap Q <Nop>
 noremap K <Nop>
 
+" Escape insert mode quickly
+imap jj <Esc>
+
 noremap <2-LeftMouse> *#
 
 nmap <Leader>d :call pry#insert()<cr>

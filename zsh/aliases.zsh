@@ -1,4 +1,7 @@
-alias zr="source ~/.zshrc"
+alias ae="nvim ~/.zsh/aliases.zsh"
+alias ar="source ~/.zsh/aliases.zsh; echo 'aliases reloaded!'"
+
+alias zr="source ~/.zshrc; echo 'zshrc reloaded!'"
 
 alias b="bundle"
 alias be="bundle exec"
@@ -22,3 +25,44 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias vim=nvim
+
+# FASD jump to recently used items
+alias a="fasd -a" # any
+alias s="fasd -s" # show / search / select
+alias d="fasd -d" # directory
+alias f="fasd -f" # file
+alias j="fasd_cd -d" # cd, same functionality as j in autojump
+alias v="f -e nvim" # quick opening files with neovim
+
+alias c="rails console"
+
+# git
+alias amend="git commit --amend"
+alias amendne="git commit --amend --no-edit"
+alias ga="git add"
+alias gs="git status -s"
+alias gall="git add -A"
+alias gap="git add -p"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbrn="git branch -m"
+alias gc="git commit"
+alias gcl="git clone"
+alias hc="hub clone"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcp="git cherry-pick"
+alias gd="git diff"
+alias gf="git fetch"
+alias gl="git log -10 --format=pretty"
+alias gm="git merge"
+alias gnb="git checkout -b"
+alias gp="git push"
+alias gpf!="git push --force-with-lease"
+alias gpr="hub pull-request"
+alias gr="git rebase"
+alias gra="git rebase --abort"
+alias grc="git rebase --continue"
+alias gri="git rebase -i"
+alias gs="git status -s"
+alias standup="git standup"
