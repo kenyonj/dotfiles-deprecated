@@ -60,28 +60,17 @@ _git_dirty(){
 }
 
 _git_clean_or_dirty() {
+if [ -d .git ]; then
   if [ -z "$(_git_dirty)" ]; then
     echo -n " %B%F{green}$(_git_branch)%b%f"
   else
     echo $(_git_dirty)
   fi
-}
-
-_color() {
-  if [ -n "$1" ]; then
-    echo "%B%F{$2}$1%b%f"
-  fi
+fi;
 }
 
 _separate()               { if [ -n "$1" ]; then echo " $1"; fi }
-_grey()                   { echo "$(_color "$1" grey)" }
-_yellow()                 { echo "$(_color "$1" yellow)" }
-_green()                  { echo "$(_color "$1" green)" }
-_red()                    { echo "$(_color "$1" red)" }
-_cyan()                   { echo "$(_color "$1" cyan)" }
-_blue()                   { echo "$(_color "$1" blue)" }
-
-_working_directory()      { echo "$(_blue "%c")" }
+_working_directory()      { echo "%B%F{blue}%c%b%f" }
 
 _display_current_vim_mode() {
   if [[ $VIMODE == 'vicmd' ]]; then
