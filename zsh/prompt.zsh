@@ -85,9 +85,9 @@ _working_directory()      { echo "$(_blue "%c")" }
 
 _display_current_vim_mode() {
   if [[ $VIMODE == 'vicmd' ]]; then
-    echo "$(_red "✘")"
+    echo "%B%F{red}•%b%f"
   else
-    echo "$(_green "✔")"
+    echo "%B%F{green}•%b%f"
   fi
 }
 
@@ -99,5 +99,5 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-PROMPT='$(_working_directory)$(_separate $(_git_clean_or_dirty)) $(_display_current_vim_mode)  '
-
+PROMPT='$(_working_directory)$(_separate $(_git_clean_or_dirty)) '
+RPROMPT='$(_display_current_vim_mode)'
