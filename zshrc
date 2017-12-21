@@ -73,6 +73,9 @@ bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
 bindkey "^k" kill-line
 
+bindkey "^R" history-incremental-search-backward
+bindkey "^P" history-search-backward
+
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # jj to enter vim-mode
