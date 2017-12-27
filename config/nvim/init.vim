@@ -48,6 +48,9 @@ Plug 'morhetz/gruvbox'
 Plug 'Yggdroot/indentLine'
 Plug 'elzr/vim-json'
 
+" Movement
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 filetype plugin indent on

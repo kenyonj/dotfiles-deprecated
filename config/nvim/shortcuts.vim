@@ -22,17 +22,20 @@ noremap <leader>= <C-w>=
 nnoremap <leader>[ :tabp<cr>
 nnoremap <leader>] :tabn<cr>
 
+" tmux navigator
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+
 " Split to current file
 nnoremap <leader>eh :Vexplore<cr>
 nnoremap <leader>ej :Hexplore<cr>
 nnoremap <leader>ek :Hexplore!<cr>
 nnoremap <leader>el :Vexplore!<cr>
-
-" Easy navigation of splits
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>h <C-w>h
-nnoremap <leader>l <C-w>l
 
 " Git shortcuts
 map <leader>gs :Gstatus<cr>
