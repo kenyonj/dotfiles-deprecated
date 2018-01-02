@@ -1,3 +1,6 @@
+" Use deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Indent li and p tags properly
 let g:html_indent_tags = 'li\|p'
 

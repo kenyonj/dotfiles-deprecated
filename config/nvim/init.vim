@@ -52,6 +52,9 @@ Plug 'elzr/vim-json'
 " Movement
 Plug 'christoomey/vim-tmux-navigator'
 
+" Deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 call plug#end()
 
 filetype plugin indent on
