@@ -96,3 +96,7 @@ export ANDROID_SDK_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.fastlane/bin:$PATH"
+
+# Add dotfiles bin to path
+export PATH="$PATH:$HOME/.bin"
+
