@@ -69,6 +69,11 @@ let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
 \}
 
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\}
+let g:ale_fix_on_save=1
+
 " Single character modes
 let g:airline_mode_map = {
       \ '__' : '-',
