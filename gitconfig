@@ -18,7 +18,7 @@
   statusHints = false
 [commit]
   template = ~/.gitmessage
-  gpgsign = true
+	gpgsign = true
 [fetch]
   prune = true
 [push]
@@ -36,3 +36,5 @@
   smudge = git lfs smudge %f
 [credential]
 	helper = osxkeychain
+[gpg]
+	program = gpg
