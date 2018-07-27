@@ -87,7 +87,7 @@ eval "$(fasd --init auto)"
 CHRUBY_LOCATION="/usr/local/opt/chruby/share/"
 source "$CHRUBY_LOCATION/chruby/chruby.sh"
 source "$CHRUBY_LOCATION/chruby/auto.sh"
-chruby "ruby-2.4.2"
+chruby "ruby-2.5.1"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -99,4 +99,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Add dotfiles bin to path
 export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/Downloads/google-cloud-sdk/bin" 
 
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

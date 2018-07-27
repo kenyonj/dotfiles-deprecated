@@ -12,6 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
 
 " Workflow
 Plug 'BlakeWilliams/vim-pry'
